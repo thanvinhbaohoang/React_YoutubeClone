@@ -1,14 +1,14 @@
 # Title
+Youtube But Bad
+*description* As Title Said
 
-*description*
-
-[deployed url](http://url-if-deployed-here)
+[deployed url](https://youtube-but-bad.onrender.com)
 
 ## What Worked Well
-All The Set Up and installs
+Everything
 
 ## What Didn't
-GitHub Pushing is a nightmare and webpack does not work (html does not connect to .scss nor .js)
+The syntax errors are eggrerious
 ## Extra Credit
 
 ## Screenshots
