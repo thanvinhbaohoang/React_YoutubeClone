@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { createRoot } from 'react-dom/client';
 import './style.scss';
+// eslint-disable-next-line no-unused-vars
+import debounce from 'lodash.debounce';
 import SearchBar from './components/search_bar';
 import youtubeSearch from './youtube-api';
 import VideoList from './components/video_list';
@@ -26,6 +28,8 @@ class App extends Component {
         });
       });
     };
+    // in App constructor before you use this.search
+    // this.search = debounce(this.search, 300);
     search('pixar');
   }
 
@@ -33,9 +37,11 @@ class App extends Component {
     return (
       <div>
         <SearchBar onSearchChange={this.search} />
-        <VideoList videos={this.state.videos} />
-        <VideoDetail video={this.state.selectedVideo} />
-        <VideoList onVideoSelect={(selectedVideo) => this.setState({ selectedVideo })} videos={this.state.videos} />
+        <div id="video-section">
+          <VideoList videos={this.state.videos} />
+          <VideoDetail video={this.state.selectedVideo} />
+          <VideoList onVideoSelect={(selectedVideo) => this.setState({ selectedVideo })} videos={this.state.videos} />
+        </div>
       </div>
     );
   }
