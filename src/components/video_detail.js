@@ -10,12 +10,12 @@ function VideoDetail({ video }) {
   return (
     <div id="video-detail">
       <div className="embed-responsive embed-responsive-16by9">
-        <iframe className="embed-responsive-item" src={url} title="workplz" />
+        <iframe className="embed-responsive-item" src={url} title="embed-responsive-item" />
       </div>
 
       <div className="details">
-        <div>{video.snippet.title}</div>
-        <div>{video.snippet.description}</div>
+        <div id="title">{video.snippet.title}</div>
+        <div id="description">{video.snippet.description}</div>
       </div>
     </div>
   );

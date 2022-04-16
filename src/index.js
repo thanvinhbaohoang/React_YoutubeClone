@@ -29,7 +29,7 @@ class App extends Component {
       });
     };
     // in App constructor before you use this.search
-    this.search = debounce(search, 300);
+    this.search = debounce(search, 500);
     search('pixar');
   }
 

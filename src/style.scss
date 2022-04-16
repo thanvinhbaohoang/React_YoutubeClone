@@ -1,22 +1,24 @@
 
-$fontcolor:  rgb(10%, 10%, 10%);
-$backgroundcolor: rgb(98%, 98%, 98%);
+$fontcolor:  rgb(255, 255, 255);
+$backgroundcolor: white;
 
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: $fontcolor;
-  background-color: $backgroundcolor;
+  background: rgb(38, 0, 45);
   margin: 50px;
 }
 
 
 #search-bar {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 
   input {
     font-size: 1.5em;
     border-radius: .25em;
+    width: 50%;
+    padding: 10px;
   }
 }
 
@@ -24,14 +26,34 @@ body {
   width: 100%;
 }
 
+#title{
+  font-size: 36px;
+  font-weight: 700;
+}
+#description{
+  border: solid 1px rgba(231, 231, 231, 0.307);
+  padding: 20px;
+  padding-left: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+
 #video-section {
   display: flex;
 
   li {
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 197, 248, 0.443);
+    border: solid 1px rgba(0, 0, 0, 0.307);
+    border-radius: 10px;
+    font-weight: 700;
+    align-items: center;
     list-style: none;
     cursor: pointer;
     display: flex;
     width: 25vw;
+    
     padding: 10px;
   }
   li:hover {

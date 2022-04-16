@@ -22,8 +22,7 @@ class SearchBar extends Component {
   render() {
     return (
       <div id="search-bar">
-        <input onChange={this.onInputChange} value={this.state.searchterm} />
-        <p> State value: {this.state.searchterm} </p>
+        <input onChange={this.onInputChange} value={this.state.searchterm} placeholder="Search Your Videos" />
       </div>
     );
   }
