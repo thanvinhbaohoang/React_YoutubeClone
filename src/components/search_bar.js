@@ -15,6 +15,7 @@ class SearchBar extends Component {
   onInputChange(event) {
     // eslint-disable-next-line react/no-unused-state
     this.setState({ searchterm: event.target.value });
+    this.props.onSearchChange(event.target.value);
     console.log(event.target.value);
   }
 
