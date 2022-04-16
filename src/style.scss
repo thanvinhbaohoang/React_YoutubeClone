@@ -1,12 +1,3 @@
-body, html {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: "Roboto", sans-serif;
-    background: linear-gradient(to bottom, #87e0fd 0%,#f1538f 40%,#e005bb 100%);
-    height: 100%;
-}
 
 $fontcolor:  rgb(10%, 10%, 10%);
 $backgroundcolor: rgb(98%, 98%, 98%);
@@ -15,7 +6,7 @@ $backgroundcolor: rgb(98%, 98%, 98%);
 body {
   font-family: "Roboto", sans-serif;
   color: $fontcolor;
-  background-color: white;
+  background-color: $backgroundcolor;
   margin: 50px;
 }
 
