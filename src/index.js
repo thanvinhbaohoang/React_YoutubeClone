@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { createRoot } from 'react-dom/client';
 import './style.scss';
-// eslint-disable-next-line no-unused-vars
 import debounce from 'lodash.debounce';
-import SearchBar from './components/search_bar';
+import SearchBar from './components/search-bar';
 import youtubeSearch from './youtube-api';
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
@@ -14,9 +13,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      // eslint-disable-next-line react/no-unused-state
       videos: [],
-      // eslint-disable-next-line react/no-unused-state
       selectedVideo: null,
     };
 

@@ -1,19 +1,13 @@
-/* eslint-disable class-methods-use-this */
 import React, { Component } from 'react';
 
-// eslint-disable-next-line react/prefer-stateless-function
 class SearchBar extends Component {
   constructor(props) {
     super(props);
-    // eslint-disable-next-line react/no-unused-state
     this.state = { searchterm: '' };
-    // add to the bottom of your constructor
     this.onInputChange = this.onInputChange.bind(this);
   }
 
-  // eslint-disable-next-line react/no-unused-class-component-methods
   onInputChange(event) {
-    // eslint-disable-next-line react/no-unused-state
     this.setState({ searchterm: event.target.value });
     this.props.onSearchChange(event.target.value);
     console.log(event.target.value);
@@ -22,7 +16,7 @@ class SearchBar extends Component {
   render() {
     return (
       <div id="search-bar">
-        <input onChange={this.onInputChange} value={this.state.searchterm} placeholder="Search Your Videos" />
+        <input onChange={this.onInputChange} value={this.state.searchterm} placeholder="Add Your Note Title" />
       </div>
     );
   }
