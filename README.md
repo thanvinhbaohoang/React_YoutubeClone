@@ -1,7 +1,5 @@
 # Title
-Youtube But Bad
-*description* As Title Said
-
+React Starter Pack With A Youtube Clone App
 [deployed url](https://youtube-but-bad.onrender.com)
 
 ## What Worked Well
